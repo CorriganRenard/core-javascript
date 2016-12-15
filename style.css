@@ -1,0 +1,15 @@
+body{
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: black;
+}
+main{
+    background-color: blue;
+    margin: 0px auto;
+    padding: 20px;
+    max-width: 600px;
+}
+.header{
+
+}
