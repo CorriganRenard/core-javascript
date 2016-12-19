@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/CorriganRenard/core-javascript/issues"
   },
-  "homepage": "https://github.com/CorriganRenard/core-javascript#readme"
+  "homepage": "https://github.com/CorriganRenard/core-javascript#readme",
+  "dependencies": {
+    "prismjs": "^1.6.0"
+  }
 }

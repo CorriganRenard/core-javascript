@@ -1,5 +1,5 @@
-//document ready function
-function ready(fn) {
+    //document ready function
+    function ready(fn) {
     if (document.readyState != 'loading') {
         fn();
     } else {
@@ -65,14 +65,15 @@ ready(function(){
 
 });
 
+sumAll([1,5]);
+
 function sumAll(arr){
     var low = Math.min(arr[0], arr[1]);
     var high = Math.max(arr[0], arr[1]);
-    for (var i = low + 1; i < high; i++){
+    for (var i = low + 1; i < high; i++)
         arr.push(i);
-    }
-    var sum = arr.reduce(function(accumulator, currentVal){
+
+    return arr.reduce(function(accumulator, currentVal){
         return accumulator + currentVal;
-    }, 0)
-    return sum;
+    }, 0);
 }

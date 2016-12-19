@@ -5,11 +5,82 @@ body{
     color: black;
 }
 main{
-    background-color: blue;
     margin: 0px auto;
     padding: 20px;
     max-width: 600px;
 }
+
+.title{
+    text-align: center;
+    color: blue;
+    font-weight: 600;
+}
 .header{
 
+}
+.playground {
+
+}
+
+.feature{
+    background-color: blue;
+    margin: 10px auto;
+    padding: 20px;
+    max-width: 600px;
+    font-weight: 100;
+    font-size: 1.2em;
+    border-radius: 4px;
+
+
+}
+.feature h2 {
+    padding: 0px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+.tags{
+    display: inline-block;
+    font-size: 1em;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    padding: 4px 15px 6px 15px;
+    margin: 5px 3px;
+    color: grey;
+    font-family: courier;
+}
+
+.tags a{
+    color: grey;
+    text-decoration: none;
+    text-align: left;
+}
+.tags a:hover{
+    color: orange;
+}
+.code{
+
+}
+.example{
+
+}
+.explain{
+
+}
+.sketch{
+
+}
+.animation{
+
+}
+.animation img{
+    width: 560px;
+    border-radius: 3px;
+}
+.exercise{
+    background-color: #f8f8f8;
+    padding: 7px 10px;
+    border-radius: 3px;
+    margin: 7px 0 10px 0px;
 }

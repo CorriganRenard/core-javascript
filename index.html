@@ -6,20 +6,106 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="highlighter/prism.css">
+
     <title>Document</title>
 </head>
 <body>
 <main>
     <div class="playground">
-        <h1>playing with core-javascript</h1>
-        <div id="reduce"><p>playing with array.prototype.reduce.</p></div>
+        <h1 class="title">My core-javascript adventures!</h1>
+        <div class="feature" id="reduce">
+            <h2>Sum all numbers in a range</h2>
+
+            <ul>
+                <li class="tags">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce">
+                        Array.prototype.reduce()
+                    </a>
+                </li>
+
+                <li class="tags">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for">
+                    for statement
+                    </a>
+                </li>
+
+            <li class="tags">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min">
+                Math.min()
+                </a>
+            </li>
+            <li class="tags">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max">
+                Math.max()
+                </a>
+            </li>
+            </ul>
+
+            <div class="exercise">Objective: Take two numbers in an array and get the sum of those numbers as well as all numbers in between.</div>
+            <div class="code">
+                <script src="https://gist.github.com/CorriganRenard/9ed5d049ed46955e12ea51cc2d8ae756.js"></script>
+            </div>
+            <div class="example"></div>
+            <div class="exercise">
+                <p>Explanation:</p>
+                <p>We use <code>Math.min()</code> and <code>Math.max()</code> to get the lowest and highest numbers in the array (in case they are out of order). </p>
+                <p>We then use a <code>for</code> loop to loop through and push the numbers between min and max into the array.</p>
+                <p> We use <code>reduce()</code> to get the sum of all the numbers in the array.</p>
+            </div>
+            <div class="sketch"></div>
+            <div class="animation">
+                <img src="media/code.png" alt="animation">
+            </div>
+        </div>
+
+        <div class="feature" id="diff">
+            <h2>Get the difference between two arrays</h2>
+
+            <ul>
+                <li class="tags">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Filter">
+                        Array.prototype.filer()
+                    </a>
+                </li>
+
+                <li class="tags">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Concat">
+                        Array.prototype.concat()
+                    </a>
+                </li>
+
+                <li class="tags">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf">
+                        Array.prototype.indexOf()
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="exercise">Objective: Take two arrays of numbers and return all numbers that occur in one, but not two, of the arrays.</div>
+            <div class="code">
+                <script src="https://gist.github.com/CorriganRenard/bfec45a509539e04db309b602b2e0dc1.js"></script>            </div>
+            <div class="example"></div>
+            <div class="exercise">
+                <p>Explanation:</p>
+                <p>We use <code>filter()</code> and <code>indexOf()</code> to find each of the numbers that appear in one array but not the other. </p>
+                <p>We then use <code>concat()</code> to join the two arrays resulting from the <code>filter()</code>.</p>
+            </div>
+            <div class="sketch"></div>
+            <div class="animation">
+
+            </div>
+        </div>
+
     </div>
     <div class="streamers" id="results"></div>
 
 </main>
 
-
-
 <script src="index.js"></script>
+<script src="highlighter/prism.js"></script>
+
 </body>
 </html>
+
